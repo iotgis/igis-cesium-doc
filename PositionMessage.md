@@ -1,5 +1,9 @@
-## new IGis.PositionMessage()  
-在指定位置显示经纬度信息的基类。  
+## new IGis.PositionMessage(viewer)  
+在指定位置显示经纬度信息的基类。   
+  
+名称|类型|默认值|介绍    
+-|-|-|-  
+viewer|Viewer||The viewer  
   
 ###Methods  
 ####show(options)  

@@ -60,7 +60,7 @@ outlineWidth |number |1.0 |轮廓线宽度。
   
   
 
-###geojsonLabels(dataSource,options)  
+###geoJsonLabels(dataSource,options)  
 给geojson绘制label标签。  
   
 名称　| 类型 |默认值|介绍  

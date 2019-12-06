@@ -1,9 +1,9 @@
-##new IGis.CzmlLine(points)  
+##new IGis.CzmlLine(points,options)  
 通过czml模拟行车路径，路径导航。  
   
 名称|类型|默认值|介绍  
 -|-|-|-  
-points|数组[]||规划路径的点集经纬度。     
+points|数组[[lon,lat]]||规划路径的点集经纬度。     
   
 ###Methods   
 ####updatePosition(point,type,message)   
@@ -13,7 +13,7 @@ points|数组[]||规划路径的点集经纬度。
 名称|类型|默认值|介绍  
 -|-|-|-  
 point|数组[]||最新位置的经纬度。  
-type |string||行车状态（正常，警报，离线）。   
+type |string||行车状态（normal，warning，offline）。   
 message|string||车上方要显示的信息。   
       
   
