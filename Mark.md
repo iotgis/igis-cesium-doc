@@ -1,9 +1,10 @@
-##new IGis.Mark()  
+##Mark  
 以点或图片的形式添加标记。  
   
 ###Methods  
   
-####createMark(pointOptions,billboardOptions)
+
+####IGis.Mark.add(pointOptions,billboardOptions) 
 鼠标左键点击添加标记。  
   
 名称|类型|默认值|介绍  
@@ -40,9 +41,13 @@ disableDepthTestDistance |number |0 |指定距相机多少米禁用深度测试�
 id |string ||标记的Id
 name |string ||标记的名称。
   
-####cancelMark()  
+####IGis.Mark.cancel()  
 取消鼠标左键添加标记。  
    
-####deleteMark()  
+####IGis.Mark.delete()  
   
-删除选中的标记。
+删除选中的标记。  
+
+####IGis.Mark.deleteAll()  
+  
+删除所有的标记。

@@ -1,16 +1,16 @@
-##new IGis.Weather()  
+##Weather
   
-所有天气的基类。
+天气
   
 ###Methods  
-####createSnow()  
+####IGis.Weather.createSnow()  
 创建下雪天气。  
   
-####createRain()  
+####IGis.Weather.createRain()  
 创建下雨天气。  
   
-####createFog()  
+####IGis.Weather.createFog()  
 创建雾天气。    
   
-####stopWeather()  
+####IGis.Weather.stopWeather()  
 停止天气效果（创建晴天）。 

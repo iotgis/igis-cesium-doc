@@ -1,15 +1,11 @@
-##new IGis.Home(viewer)  
+##Home 
   
 一个简单的按钮能让摄像机从当前位置飞行到默认位置。
-  
-名称|类型|默认值|介绍  
--|-|-|-  
-viewer|Viewer||The viewer  
-<a herf="#options">options</a>|object||摄像机飞行至默认位置属性。   
+       
 
 ###Methods   
   
-####homeButton(options,classOptions)  
+####createButton(options,classOptions)  
 创建一个按钮能让摄像机从当前位置飞行到默认位置。  
     
 名称|类型|默认值|介绍  

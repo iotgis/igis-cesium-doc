@@ -1,4 +1,4 @@
-##IGis.ClockRange()  
+##ClockRange 
 确定在开始时间或结束时间到达时时钟应如何表现。  
   
 ###Members  

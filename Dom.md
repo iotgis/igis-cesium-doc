@@ -1,10 +1,10 @@
-##new IGis.Dom()  
+##Dom
   
 所有创建dom相关方法的基类。   
      
 ###Methods   
   
-####createDom(options)  
+####IGis.Dom.create(options)  
   
 根据参数创建规定样式的dom。
 返回值：{HTMLElement}，返回所创建的dom。  
@@ -27,7 +27,7 @@ class|string||创建dom的样式类名。
 
 
   
-#### createChartBox (dataOption,options)  
+#### IGis.Dom.createChartBox (dataOption,options)  
 创建echarts图表。
 返回值：{HTMLElement} 创建的图表。  
   
@@ -43,7 +43,7 @@ id |string ||配置图表的Id。
 class |string ||配置图表的样式类名。  
 fatherDom |{HTMLElement} |document.body |图表的父级dom。  
     
-####createMapPopup(options)  
+####IGis.Dom.createMapPopup(options)  
 创建弹窗。  
 返回值：{HTMLElement} 创建的弹窗dom。   
   
@@ -66,7 +66,7 @@ title |string ||底部按钮显示的文字。
 id |string ||底部按钮的ID。   
 imageUrl |string ||底部按钮使用的图片。    
   
-####on(actiontype,fn)  
+####IGis.Dom.on(actiontype,fn)  
 监听函数，监听鼠标操作。
 返回值：dom元素的Id。  
 

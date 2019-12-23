@@ -1,16 +1,13 @@
-## new IGis.PositionMessage(viewer)  
+##PositionMessage
 在指定位置显示经纬度信息的基类。   
   
-名称|类型|默认值|介绍    
--|-|-|-  
-viewer|Viewer||The viewer  
   
 ###Methods  
-####show(options)  
+####IGis.PositionMessage.show(options)  
   
 名称|类型|默认值|介绍  
 -|-|-|-  
-<a herf="#options">options</a>|object||容器ID。  
+<a herf="#options">options</a>|object||容器属性。  
   
 #####<a name="options">options</a>  
 名称|类型|默认值|介绍  

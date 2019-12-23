@@ -17,7 +17,10 @@ changelayer|boolean|true|是否创建切换图层按钮,默认为true。
 copyright|boolean|true|是否显示版权信息,默认为true。
 fps|boolean|true|是否显示每秒传输帧数,默认为true。
 layurl|string|'http://www.google.cn/maps/vt?lyrs=s@800&x={x}&y={y}&z={z}'|底图地址,默认为谷歌地图。
-positionMessage|boolean|true|是否显示经纬高,默认为true。
+layerurl|string||地形数据地址。
+enableSkyBox|boolean|true|是否创建天空盒。
+skyBoxSources|object|{positiveX,negativeX,positiveY,negativeY,positiveZ,negativeZ}|天空盒资源。
+
 
                
 
