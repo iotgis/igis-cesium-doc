@@ -46,7 +46,7 @@ class |string ||配置图表的样式类名。
 show |boolean |true|是否显示图标。  
 fatherDom |{HTMLElement} |document.body |图表的父级dom。  
     
-####IGis.Dom.createMapPopup(options)  
+####IGis.Dom.createMapPopup(options，position)  
 创建弹窗。  
 返回值：{HTMLElement} 创建的弹窗dom。   
   
@@ -70,7 +70,7 @@ actions |数组[<a herf="#action">action</a>] ||弹窗底部的按钮元素。
 名称|类型|默认值|介绍
 -|-|-|-  
 title |string ||底部按钮显示的文字。  
-id |string ||底部按钮的ID。   
+type |string ||底部按钮的事件类型。   
 imageUrl |string ||底部按钮使用的图片。     
   
 ######代码示例  
