@@ -3,14 +3,17 @@
  
   
 ###Methods  
-####IGis.DomRender.open(dictionary,elementId)  
+####IGis.DomRender.open()  
 打开浮框渲染。
-    
-  
-名称|类型|默认值|介绍
--|-|-|-    
-dictionary|Array||domId和position的集合，{domId:position}。
-elementId|string||想要显示的特定dom的Id，如果不填，则显示dictionary中的所有dom。 
 
 ####IGis.DomRender.close()   
-关闭浮框渲染。
+关闭浮框渲染。   
+  
+####IGis.DomRender.update(domID,show)  
+更新dom是否显示。  
+  
+名称|类型|默认值|介绍
+-|-|-|-  
+domID |string ||要更新状态的dom元素ID。  
+show |boolean ||是否显示。     
+  

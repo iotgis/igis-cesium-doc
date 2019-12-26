@@ -4,7 +4,7 @@
   
 ###Methods  
   
-####moustevent(eventType,entity,fn)  
+####moustevent(eventType,fn)  
   
 名称|类型|默认值|介绍  
 -|-|-|-      

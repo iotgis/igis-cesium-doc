@@ -19,11 +19,11 @@ width |number ||指定广告牌的宽度（以像素为大小），并覆盖原�
 height|number ||指定广告牌的高度（以像素为大小），并覆盖原始大小。
 disableDepthTestDistance |number |0 |指定距相机多少米禁用深度测试。    
     
-      const billboardOptions={
+      var billboardOptions={
                 show:true,
                 image:"./images/bill.png",
                 scale: 1.0
             }
-      const billboard=new IGis.Billboard();
+      var billboard=new IGis.Billboard(billboardOptions);
 
   

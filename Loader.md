@@ -37,15 +37,17 @@ url |string ||模型的地址。
 enableZoomto|boolean|false|是否将模型在视野中放大居中。   
       
 
-###geojsonLoader(url)  
+###geojsonLoader(url,options,fn)  
 
 geojson加载器。  
-返回值：转换为EntityCollection的通用数据dataSource。   
+返回值：回调函数，转换为EntityCollection的通用数据dataSource。   
   
 名称　| 类型 |默认值|介绍  
 -------  |------|-   |-------   
 url|string  ||geojson的地址。  
-<a herf="#geojsonoptions">options</a>|object||geojson的属性值。  
+<a herf="#geojsonoptions">options</a>|object||geojson的属性值。    
+  
+
   
 #####<a name="geojsonoptions">options</a>
 名称　| 类型 |默认值|介绍  
@@ -58,8 +60,16 @@ outlineColor |IGis.Color|Color.WHITE |轮廓线的颜色。
 outlineWidth |number |1.0 |轮廓线宽度。   
   
   
-  
-
+######代码样例：    
+    const url = "./Geojson/110100.json";
+    const loader = new IGis.Loader();
+    const options = {
+          height: 0,
+          fill: false
+     }
+    loader.geojsonLoader(url, options, function (dataSource) {
+        loader.geoJsonLabels(dataSource);    //添加四色图对应label
+    })
 ###geoJsonLabels(dataSource,options)  
 给geojson绘制label标签。  
   
