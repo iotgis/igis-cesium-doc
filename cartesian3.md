@@ -1,21 +1,23 @@
-##new IGis.Cartesian3(longitude,latitude,height)  
-通过x,y,z来定义的笛卡尔坐标信息。  
-  
-名称|类型|默认值|介绍  
--|-|-|-   
-x|number|0.0|X组件。  
-y|number|0.0|Y组件。  
-z|number|0.0|Z组件。  
-  
-###Methods  
-  
-####IGis.Cartesian3.fromDegrees(longitude, latitude, height, ellipsoid)    
+# Cartesian3
+
+通过x,y,z来定义的笛卡尔坐标信息。
+
+| 名称 | 类型 | 默认值 | 介绍 |
+| :--- | :--- | :--- | :--- |
+| x | number | 0.0 | X组件。 |
+| y | number | 0.0 | Y组件。 |
+| z | number | 0.0 | Z组件。 |
+
+## Methods
+
+### IGis.Cartesian3.fromDegrees\(longitude, latitude, height, ellipsoid\)
+
 通过给定的经纬度值返回一个笛卡尔坐标值
-  
-  
-名称|类型|默认值|介绍  
--|-|-|-   
-longitude| number|0.0 |经度，弧度值。  
-latitude| number |0.0 |纬度，弧度值。  
-height |number |0.0 |高度，米。     
-ellipsoid|Ellipsoid |Ellipsoid.WGS84 |位置所在的椭圆体。
+
+| 名称 | 类型 | 默认值 | 介绍 |
+| :--- | :--- | :--- | :--- |
+| longitude | number | 0.0 | 经度，弧度值。 |
+| latitude | number | 0.0 | 纬度，弧度值。 |
+| height | number | 0.0 | 高度，米。 |
+| ellipsoid | Ellipsoid | Ellipsoid.WGS84 | 位置所在的椭圆体。 |
+
