@@ -57,8 +57,8 @@
 | show | boolean | true | 弹窗是否显示。 |
 | id | string或number |  | 弹窗ID，用于与三维坐标关联。 |
 | title | string |  | 弹窗的标题元素。 |
-|classname | string |  | 自定义的弹窗样式。 |
 | fatherDom | {HTMLElement} | document.body | 弹窗的父级元素，如果不填，则默认为三维球容器。 |
+| title | string |  | 弹窗的标题元素。 |
 | content | string |  | 弹窗的内容元素。 |
 | actions | 数组\[[action](dom.md)\] |  | 弹窗底部的按钮元素。 |
 
