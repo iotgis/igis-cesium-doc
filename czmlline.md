@@ -1,9 +1,10 @@
-##new IGis.CzmlLine(options)  
+##new IGis.CzmlLine(options,scanOptions)  
 通过czml模拟行车路径，路径导航。  
   
 名称|类型|默认值|介绍  
 -|-|-|-   
 <a herf="#options">options</a>| object ||标签label的样式属性。
+<a herf="#scanOptions">scanOptions</a>| object ||扫描面样式属性，当enableScan为true时才有用。
   
 #####<a name="options">labelOptions</a>    
   
@@ -16,6 +17,16 @@ model|object||模型信息。
 pathMaterial|object||路径材质。   
 pathWidth|number||路径宽度。  
 timeInterval|number||两点间的时间间隔。  
+enableScan|boolean|false|是否为路径添加跟随的扫描面。  
+
+#####<a name="scanOptions">scanOptions</a>    
+  
+  
+名称|类型|默认值|介绍  
+-|-|-|-    
+radius|number|100|扫描面半径。    
+scanColor|Color||扫描面颜色。
+duration |number |30 |扫描一圈所用的时间（秒）。   
   
   
       let _options={

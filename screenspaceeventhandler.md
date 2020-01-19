@@ -12,6 +12,6 @@ eventType|ScreenSpaceEventType||鼠标点击类型。
 fn|||回调函数，返回点击的实体。  
   
      const handler = new IGis.ScreenSpaceEventHandler();
-     handler.mouseevent(IGis.ScreenSpaceEventType.LEFT_CLICK, function (entity) {
-                console.log(entity)
+     handler.mouseevent(IGis.ScreenSpaceEventType.LEFT_CLICK, function (picked) {
+                console.log(picked.id)
      })
