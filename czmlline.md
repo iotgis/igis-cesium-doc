@@ -115,3 +115,34 @@ message|string||车上方要显示的信息。
 
 ####tracked()  
 视角跟随。   
+
+####on(fn)  
+返回czml中图片的实时位置。
+
+名称|类型|默认值|介绍  
+-|-|-|-    
+fn|function||回调函数。 
+#######代码示例  
+     var czml = new IGis.CzmlLine(options);
+     czml.on(function (position) {
+              console.log(position);
+     })
+####changeType(options)  
+更改行车过程中的一些属性值。  
+
+名称|类型|默认值|介绍  
+-|-|-|-    
+<a herf="#options">options</a>|object||需要修改的属性对象，包含以下属性。 
+#####<a name="options">options</a>  
+ 名称|类型|默认值|介绍  
+-|-|-|-    
+type |string |"normal" |车辆运行状态，包含"normal","warning","offline"三种。  
+message |string ||车上方要显示的信息。  
+
+########代码示例
+    czml.changeType({
+         type:"warning",
+         message:"警报，车辆非正常行驶"
+     });
+
+  
