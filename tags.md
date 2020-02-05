@@ -21,6 +21,7 @@ label |object | |要添加的标签标记。
 point |object ||要添加的点标记。  
 billboard |object | |要添加的广告牌标记。  
 polyline |object ||要添加的线标记。  
+circle|object||要添加的圆或者椭圆。
 id |string ||指定所添加标记的ID。    
   
      const lon = 120.15221524;
