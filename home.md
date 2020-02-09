@@ -10,10 +10,15 @@
     
 名称|类型|默认值|介绍  
 -|-|-|-  
-viewer|Viewer||The viewer  
+<a herf="#options">options</a>|object||摄像机飞行至默认位置属性。
 <a herf="#classOptions">classOptions</a>|object||home按钮的样式对象。
 
+ #####<a name="options">options</a>  
   
+名称|类型|默认值|介绍  
+-|-|-|-  
+position|object或者[]|{lon:116.391134,lat:39.901334,alt:800}|摄像机目的地经纬高位置。{lon,lat,alt} 或者[position[0],position[1],position[2]]。  
+orientation|object或者[]|{heading:0,pitch:Math.PI/4,roll:0,}|摄像机的偏转角度。heading:弧度的航向分量，pitch:弧度的螺距分量，roll:滚动分量(以弧度为单位)。 
 #####<a name="classOptions">classOptions</a>
   
   
@@ -24,6 +29,11 @@ domType|string|"div"|所创建dom的类型。
 fatherDom|{HTMLElement}|document.body|所创建dom的父级dom。  
 class|string||创建dom的样式类名。
   
+###### 代码示例 
+    var viewer=new IGis.viewer('Container');
+    IGis.Home.viewer=viewer;    
+    IGis.Home.createButton({},{fatherDom:iconContainer,class:"ig-home"});
+
 ####home(options)  
 摄像机飞行至默认位置。
   
@@ -40,3 +50,5 @@ viewer|Viewer||The viewer
 -|-|-|-  
 position|object或者[]|{lon:116.391134,lat:39.901334,alt:800}|摄像机目的地经纬高位置。{lon,lat,alt} 或者[position[0],position[1],position[2]]。  
 orientation|object或者[]|{heading:0,pitch:Math.PI/4,roll:0,}|摄像机的偏转角度。heading:弧度的航向分量，pitch:弧度的螺距分量，roll:滚动分量(以弧度为单位)。
+###### 代码示例   
+    IGis.Home.home();

@@ -27,9 +27,15 @@ id|string||所创建dom的Id。
 domType|string|"div"|所创建dom的类型。  
 fatherDom|{HTMLElement}|document.body|所创建dom的父级dom。  
 class|string||创建dom的样式类名。   
-    
- 
+  
+      var viewer=new IGis.viewer('Container')  
+      IGis.Morph.viewer=viewer;
+      IGis.Morph.createButton({fatherDom:iconContainer,class:"ig-2D"},{fatherDom:iconContainer,class:"ig-3D"}); 
 ####IGis.Morph.to2D()
-转换为2D视图。  
+转换为2D视图。    
+###### 代码示例
+    IGis.Morph.to2D()；
 ####IGis.Morph.to3D()
-转换为3D视图。
+转换为3D视图。  
+###### 代码示例
+    IGis.Morph.to3D()；

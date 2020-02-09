@@ -18,3 +18,12 @@ height |number |30 |plane的高度。
 normal |Cartesian3|Cartesian3.UNIT_X|平面的单位法向量（必须是单位法向量）。    
     
   
+###### 代码示例   
+    var videoId="videoContainer";
+    var positions=[116.253,40.23554,0];
+    var options={
+       width:500,
+       height:500,
+       normal:IGis.Cartesian3.UNIT_Y
+    }
+    var videoPlane=new IGis.VideoPlane(videoId,positions,options);

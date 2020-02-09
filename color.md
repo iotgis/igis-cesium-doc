@@ -7,3 +7,6 @@ red| number|1.0 |红色组件。
 green| number |1.0 |绿色组件。  
 blue |number |1.0 |蓝色组件。  
 alphy |number |1.0 |alphy组件。  
+
+####### 代码示例
+ `var color=new IGis.Color(1.0,0,0,1);`

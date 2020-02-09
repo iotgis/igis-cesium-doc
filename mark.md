@@ -39,15 +39,21 @@ disableDepthTestDistance |number |0 |指定距相机多少米禁用深度测试�
  名称|类型|默认值|介绍  
 -|-|-|-    
 id |string ||标记的Id
-name |string ||标记的名称。
-  
+name |string ||标记的名称。   
+
 ####IGis.Mark.cancel()  
 取消鼠标左键添加标记。  
    
+###### 代码示例  
+`IGis.Mark.cancel();`    
 ####IGis.Mark.delete()  
   
 删除选中的标记。  
 
+###### 代码示例  
+`IGis.Mark.delete();`    
 ####IGis.Mark.deleteAll()  
   
 删除所有的标记。
+###### 代码示例  
+`IGis.Mark.deleteAll();`    

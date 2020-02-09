@@ -6,8 +6,6 @@
 viewer|Viewer||The viewer  
 <a herf="#options">options|object||罗盘属性  
   
-###Members  
-  
 ####<a name="options">options</a>  
   
 名称|类型|默认值|描述  
@@ -17,4 +15,7 @@ enableCompass|boolean|true|用于启用或禁用罗盘。true是启用罗盘，f
 enableZoomControls|boolean|true|用于启用或禁用缩放控件。true是启用，false是禁用。默认值为true。如果将选项设置为false，则缩放控件将不会添加到地图中。
 enableDistanceLegend|boolean|true|用于启用或禁用距离图例。true是启用，false是禁用。默认值为true。如果将选项设置为false，距离图例将不会添加到地图中。
 enableCompassOuterRing|boolean|true|用于启用或禁用指南针外环。true是启用，false是禁用。默认值为true。如果将选项设置为false，则该环将可见但无效。
-class|string||罗盘样式。
+class|string||罗盘样式。    
+   
+###### 代码示例
+    new Compass(viewer);

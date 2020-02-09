@@ -23,6 +23,18 @@ fullscreenButton|boolean|false|是否显示全屏按钮，如果设为true，这
 enableSkyBox|boolean|true|是否创建天空盒。
 skyBoxSources|object|{positiveX,negativeX,positiveY,negativeY,positiveZ,negativeZ}|天空盒资源。
 
+######代码示例  
+     this.viewer = new IGis.Viewer("demo", {
+                compass: false,
+                home: true,
+                morphview: true,
+                changelayer: true,
+                positionMessage: true,
+                copyright: false，
+                sceneMode:"2D",
+                layerurl: "http://webrd02.is.autonavi.com/appmaptile?lang=zh_cn&size=1&scale=1&style=8&x={x}&y={y}&z={z}"
+          });
+
 
                
 

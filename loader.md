@@ -1,5 +1,5 @@
 ##new IGis.Loader()  
-所有加载器的基类。  
+加载器。  
   
 ###Methods  
 
@@ -25,7 +25,20 @@ color |IGis.Color |Color.White |模型的颜色。
 scale |number |1.0 |模型放大倍数。  
 show |boolean |true |是否显示模型。  
 enableZoomto |boolean |false |是否将模型在视野中放大居中。  
-id|string||模型Id。  
+id|string||模型Id。
+######代码示例
+
+    var loader = new IGis.Loader();
+    var position=new IGis.Cartographic(116.25642,40.26245,0);
+    var options={
+         heading:0,
+         pitch:0,
+         roll:0,
+         scale:1,
+         id:"123"
+    }
+    loader.gltfLoader("./model/a.gltf",position,)
+ 
    
 ###tilesLoader3D(url,enableZoomto)   
 3Dtiles模型加载。  
@@ -34,9 +47,12 @@ id|string||模型Id。
 名称　| 类型 |默认值|介绍  
 -------  |------|-   |------- 
 url |string ||模型的地址。
-enableZoomto|boolean|false|是否将模型在视野中放大居中。   
+enableZoomto|boolean|false|是否将模型在视野中放大居中。  
+######代码示例   
       
-
+    var loader = new IGis.Loader();
+    var url = "http://192.168.10.121:8010/hangzhoushifan/tileset.json";
+    loader.tilesLoader3D(url);
 ###geojsonLoader(url,options,fn)  
 
 geojson加载器。  
@@ -61,9 +77,9 @@ outlineWidth |number |1.0 |轮廓线宽度。
   
   
 ######代码样例：    
-    const url = "./Geojson/110100.json";
-    const loader = new IGis.Loader();
-    const options = {
+    var url = "./Geojson/110100.json";
+    var loader = new IGis.Loader();
+    var options = {
           height: 0,
           fill: false
      }
@@ -90,13 +106,26 @@ fillColor |Color |Color.WHITE |label填充色。
 outlineWidth |number |1.0 |边框宽度。  
 outlineColor |Color |Color.BLACK |边框颜色。  
 disableDepthTestDistance |number |Number.POSITIVE_INFINITY |在什么高度关闭深度测试 设置为Number.POSITIVE_INFINITY 则关闭深度测试,设置为0则开启深度测试。    
+######代码示例
+    var url = "./Geojson/110100.json";
+    var loader = new IGis.Loader();
+    var options = {
+          height: 0,
+          fill: false
+     }
+    loader.geojsonLoader(url, options, function (dataSource) {
+        loader.geoJsonLabels(dataSource);    //添加四色图对应label
+    })
   
 ###removeGltf(entity)  
 移除通过Loader加载的gltf模型。  
   
 名称　| 类型 |默认值|介绍  
 -------  |------|-   |-------    
-entity|object||要移除的gltf模型，如果不填，则移除场景中所有的gltf模型。  
+entity|object||要移除的gltf模型，如果不填，则移除场景中所有的gltf模型。    
+  
+#######代码示例
+    loader.removeGltf();
 
 ###remove3dtiles(tileset)  
 移除通过Loader加载3dtiles模型。  
@@ -104,8 +133,9 @@ entity|object||要移除的gltf模型，如果不填，则移除场景中所有�
 名称　| 类型 |默认值|介绍  
 -------  |------|-   |-------  
 tileset |object ||要移除的3dtiles模型，如果不填，则移除所有的3dtiles模型。
-  
-  
+  #######代码示例  
+
+    loader.remove3dtiles();
 
 ###removeGeojson(dataSource)  
 移除通过Loader加载的geojson。  
@@ -114,6 +144,8 @@ tileset |object ||要移除的3dtiles模型，如果不填，则移除所有的3
 -------  |------|-   |-------  
  dataSource |object||dataSource 数据源，转换为EntityCollection的通用数据（geojsonLoader的返回值），如果不填，则移除所有的geojson。  
   
+#######代码示例  
+    loader.removeGeojson();
 
 ###removeGeoJsonLabels(label)  
 移除通过geoJsonLabels加载的label。  
@@ -121,4 +153,6 @@ tileset |object ||要移除的3dtiles模型，如果不填，则移除所有的3
 名称　| 类型 |默认值|介绍  
 -------  |------|-   |-------  
  label |object||移除label，如果不填，则移除所有的label。 
-    
+  
+#######代码示例
+    loader.removeGeoJsonLabels();

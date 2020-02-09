@@ -6,3 +6,7 @@
 x|number|0.0|X方向上的半径。  
 y|number|0.0|Y方向上的半径。  
 z|number|0.0|Z方向上的半径。  
+  
+###### 代码示例  
+    var ellipsoid=new IGis.Ellipsoid(x,y,z);
+    

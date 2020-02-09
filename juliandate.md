@@ -6,3 +6,17 @@
 julianDayNumber|number |0.0 |儒略日数，代表整天数，小数日也将得到正确的处理。  
 secondsOfDay |number |0.0 |当前朱利安天数的秒数，小数秒，负秒和大于一天的秒数将被正确处理。  
 timeStandard|TimeStandard|TimeStandard.UTC|定义前两个参数的时间标准。  
+
+### Methods  
+####IGis.JulianDate.fromDate(date, result)
+根据JavaScript时间创建一个JulianDate时间。
+返回值：JulianDate格式的时间。  
+  
+名称|类型|默认值|介绍  
+-|-|-|-  
+date|Date | |一个JavaScript时间。  
+
+###### 代码示例  
+    var data = IGis.JulianDate.fromDate(new Date());  
+
+  

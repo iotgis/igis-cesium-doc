@@ -27,9 +27,13 @@ IconUrl|string||loading图标的地址。
 text|string||loading图标下显示的文字。  
 textclass|string||文字样式类名。    
 
+###### 代码示例  
+`IGis.Loading.create();`    
+
 ###IGis.Loading.dispose() 
 销毁遮罩层和loading图标。 
-
+###### 代码示例  
+`IGis.Loading.dispose();`    
  
 
 
