@@ -40,7 +40,7 @@ terrainUrl|string||地形数据地址。
 ######示例2
 
           var wmts = new IGis.WMTSImageProvider({
-                url:'http://124.239.10.7:8088/geoserver/gwc/service/wmts/rest/igis:tdtm3/{style}/{TileMatrixSet}/{TileMatrixSet}:{TileMatrix}/{TileRow}/{TileCol}?format=image/png',
+                url:'http://124.16.10.7:8088/geoserver/gwc/service/wmts/rest/igis:tdtm3/{style}/{TileMatrixSet}/{TileMatrixSet}:{TileMatrix}/{TileRow}/{TileCol}?format=image/png',
                 layer: "igis:tdtm3",
                 style: "",
                 format: "image/png",
