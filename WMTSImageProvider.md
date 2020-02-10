@@ -1,6 +1,6 @@
 ##new IGis.WMTSImageProvider(options)  
     
-提供由Web地图服务（WMS）服务器托管的平铺图像。    
+提供由WMTS服务器托管的平铺图像。    
   
   
 名称|类型|默认值|介绍  
