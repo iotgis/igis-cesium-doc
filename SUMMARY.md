@@ -41,4 +41,5 @@
 * [Weather](weather.md)
 * [DrawGraphicalHelper](DrawGraphicalHelper.md)
 * [Circle](Circle.md)
+* [Polyline](Polyline.md)
 
