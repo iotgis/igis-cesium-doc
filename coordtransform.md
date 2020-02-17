@@ -28,7 +28,7 @@ lat| number |0.0 |纬度，弧度值。
   
 ###### 代码示例  
  
-    var position = IGis.CoordTransform.bd09togcj02(116.325,40.3652);
+    var position = IGis.CoordTransform.gcj02tobd09(116.325,40.3652);
     var longitude=position[0];
     var latitude=position[1];
 ####IGis.CoordTransform.wgs84togcj02(lon, lat)   

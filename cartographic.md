@@ -22,5 +22,5 @@ height |number |0.0 |高度，米。
 cartesian| Cartesian3| |要转换为经纬度的笛卡尔三维坐标。  
   
     var cartesian=new IGis.Cartesian3(x,y,z);   
-    var cartographic=IGis.Gratographic.fromCartesian3(cartesian);
+    var cartographic=IGis.Cartographic.fromCartesian3(cartesian);
       
