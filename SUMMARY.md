@@ -39,6 +39,7 @@
 * [VideoPlane](videoplane.md)
 * [Viewer](viewer.md)
 * [Weather](weather.md)
+* [DrawGraphical](DrawGraphical.md)
 * [DrawGraphicalHelper](DrawGraphicalHelper.md)
 * [Circle](Circle.md)
 * [Polyline](Polyline.md)
