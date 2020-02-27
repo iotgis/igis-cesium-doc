@@ -93,18 +93,19 @@ duration |number |30 |扫描一圈所用的时间（秒）。
     new IGis.CzmlLine(_options);
   
 ###Methods   
-####updatePosition(point,type,message)   
+####updatePosition(currentTime,time,point,type,message)   
 
 通过传入的经纬度更新行车路径。
 
 名称|类型|默认值|介绍  
 -|-|-|-    
+currentTime|||当前位置对应的时间戳。 
 time|number||两点间的时间间隔。 
 point|数组[]||最新位置的经纬度。  
 type |string||行车状态（normal，warning，offline）。   
 message|string||车上方要显示的信息。   
    
-` _this.czml.updatePosition(time,[120.56465,34.165453,0],type:"normal",message:"正常行驶"); `   
+` _this.czml.updatePosition(20200227,5,[120.56465,34.165453,0],type:"normal",message:"正常行驶"); `   
   
 ####cancel()  
 取消路径规划和导航。  
@@ -146,3 +147,29 @@ message |string ||车上方要显示的信息。
      });
 
   
+
+####positionCorrect(timePoList)  
+修正已经行驶过的路线。  
+
+ 
+ 名称|类型|默认值|介绍  
+-|-|-|-    
+timePoList |数组 ||含有时间戳的位置数组(按时间值排好序，索引为0的为时间最小值)。  
+message |string ||车上方要显示的信息。  
+
+########代码示例
+      var point2 = [120.1532214, 30.24081891];
+      var point1 = [120.15945621, 30.21905741];
+      var array = new Array();
+      var a1 = {
+        currentTime: 3,
+        position: IGis.Cartesian3.fromDegrees(120.1532214, 30.24081891, 0)
+      };
+      var a2 = {
+        currentTime: 6,
+        position: IGis.Cartesian3.fromDegrees(120.15945621, 30.21905741, 0)
+      };
+      array.push(a1);
+      array.push(a2)
+      czml.positionCorrect(array);
+
