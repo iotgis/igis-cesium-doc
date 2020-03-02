@@ -33,36 +33,42 @@ duration |number |30 |扫描一圈所用的时间（秒）。
             points:[],  //[{lon,lat,alt}]
             multiplier:1,
             label:{
-                "fillColor": [
+                "fillColor": [                                                     //文字填充色
                     {
                         "interval": "2019-12-01T00:00:00Z/2019-12-06T00:00:00Z",
                         "rgba": [
-                            255, 255, 0, 255
+                            0, 0, 0, 255
                         ]
                     }
                 ],
-                "font": "bold 10pt Segoe UI Semibold",
-                "horizontalOrigin": "CENTER",
+                "font": "10pt Segoe UI Semibold",         //字体字号
+                "horizontalOrigin": "CENTER",             //横向位置
                 "outlineColor": {
                     "rgba": [
                         0, 0, 0, 255
                     ]
                 },
-                "pixelOffset": {
+                "pixelOffset": {                         //视觉偏移
                     "cartesian2": [
-                        0.0,-60.0
+                        0.0, -60.0
                     ]
                 },
-                "scale": 1.0,
+                "scale": 1.0,                           //放大级别
                 "show": [
                     {
-                        "interval": "2019-12-01T00:00:00Z/2019-12-06T00:00:00Z",
-                        "boolean": true
+                        "interval": "2019-12-01T00:00:00Z/2019-12-06T00:00:00Z",  //显示时间
+                        "boolean": true           //是否显示
                     }
-                ],
-                "style": "FILL",
-                "text": "Test Vehicle",
-                "verticalOrigin": "BOTTOM"
+                ], 
+                "style": "FILL",                  //填充方式
+                "text": "测试测试56224865244",     //文本内容
+                "verticalOrigin": "BOTTOM",        //纵向位置
+                "backgroundColor":{               //背景颜色
+                    "rgba": [
+                        255, 255, 255, 255
+                    ]
+                },
+                "showBackground":"true"       //是否显示背景
             },
             billboard: {
                 "image": vehicle_normal,
