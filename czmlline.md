@@ -92,8 +92,20 @@ duration |number |30 |扫描一圈所用的时间（秒）。
                 }
             },
             pathWidth:15,
+            polyline: {
+                width: 10,
+                material:{
+                    color:new IGis.Color(1,1,1,1),     //线的颜色
+                    outlineWidth: 2,                    //线的轮廓线宽度
+                    outlineColor:new IGis.Color(1,1,1,1)   //线的轮廓线颜色
+                },
+                clampToGround: true,             //是否贴地
+                zIndex: 100,                     //线的显示优先级
+            },
+          
             ClockRange:Cesium.ClockRange.CLAMPED,
             timeInterval: 1,
+            enableScan: true             //是否添加扫描面
         }  
   
     new IGis.CzmlLine(_options);
@@ -134,7 +146,7 @@ fn|function||回调函数。
      czml.on(function (position) {
               console.log(position);
      })
-####changeType(options)  
+####changeStatus(options)  
 更改行车过程中的一些属性值。  
 
 名称|类型|默认值|介绍  
@@ -147,7 +159,7 @@ type |string |"normal" |车辆运行状态，包含"normal","warning","offline"�
 message |string ||车上方要显示的信息。  
 
 ########代码示例
-    czml.changeType({
+    czml.changeStatus({
          type:"warning",
          message:"警报，车辆非正常行驶"
      });
