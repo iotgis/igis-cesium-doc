@@ -23,17 +23,23 @@ verticalOrigin |||水平位置。
 fillColor |Color |Color.WHITE |填充颜色。  
 outlineColor |Color |Color.BLACK |外框颜色。  
 outlineWidth |number |2 |边框宽度。  
-disableDepthTestDistance |number |0 |指定距相机多少米禁用深度测试。     
+disableDepthTestDistance |number |0 |指定距相机多少米禁用深度测试。  
+distanceDisplayCondition|object|{near:0,far:Number.MAX_VALUE}|指定能看到标签的最近和最远距离。 
   
   
      const labelOptions = {
-                show: true,
+                show: true,     
                 text: "这是一个label标签",
                 showBackground: true,
                 backgroundColor: new IGis.Color(1, 1, 1, 0.5),
                 font: "30px sans-serif",
                 fillColor: IGis.Color.BLACK,
-                disableDepthTestDistance: Number.POSITIVE_INFINITY
+                disableDepthTestDistance: Number.POSITIVE_INFINITY,
+                distanceDisplayCondition:{
+                      near:0,
+                      far:5000
+                 }
+
             }
       const label = new IGis.Label(labelOptions);
   

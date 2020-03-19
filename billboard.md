@@ -17,12 +17,17 @@ scale |number |2.0 |指定要用于图像大小的比例。
 color |Color  |Color.WHITE |指定图像的色调。
 width |number ||指定广告牌的宽度（以像素为大小），并覆盖原始大小。
 height|number ||指定广告牌的高度（以像素为大小），并覆盖原始大小。
-disableDepthTestDistance |number |0 |指定距相机多少米禁用深度测试。    
+disableDepthTestDistance |number |0 |指定距相机多少米禁用深度测试。
+distanceDisplayCondition|object|{near:0,far:Number.MAX_VALUE}|指定能看到标签的最近和最远距离。     
     
       var billboardOptions={
                 show:true,
                 image:"./images/bill.png",
-                scale: 1.0
+                scale: 1.0,
+                distanceDisplayCondition:{
+                      near:0,
+                      far:5000
+                 }
             }
       var billboard=new IGis.Billboard(billboardOptions);
 
